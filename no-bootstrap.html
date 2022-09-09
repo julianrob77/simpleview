@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Site build: J Roberts</title>
+      <meta content="A front end site build test" name="description">
+      <meta content="J Roberts" name="author">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+      <meta name="theme-color" content="#337ab7">
+      <!--added icons sets here, will be moving to manifest.json (first step in PWA development) -->
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link href="flexslider/flexslider.css" id="flexslider_css-css" media="all" rel="stylesheet" type="text/css">
+      <link href="css/animate.min.css" id="animations-css" media="all" rel="stylesheet" type="text/css">
+      <link href="js/source/jquery.fancybox.css" id="fancybox-css" media="all" rel="stylesheet" type="text/css">
+      <link href="no-bootstrap-style.css" id="style-css" media="all" rel="stylesheet" type="text/css">
+      <link href="fonts/font-stylesheet.css" id="custom-fonts" media="all" rel="stylesheet" type="text/css">
+   </head>
+
+   <body class="home">
+
+      <!--fixed navbar, contains logo, navigation, search form-->
+      <header class="navbar navbar--freeze navbar--absolute navbar--transparent navbar--sticky navbar--auto-collapse">
+         <div class="navbar__section">
+            <div class="navbar__container">
+               <div class="site-branding">
+                  <div class="site-logo">
+                     <a href="#" rel="home" title="Simpleview logo">
+                     <img alt="Simpleview main logo" src="images/logo_icon.png" width="40" height="45">
+                     </a>
+                  </div>
+               </div>
+               <!--mobile menu-->
+                  <div class="navbar__hamburger hamburger text-white">
+                     <span class="hamburger__line"></span>
+                  </div>
+               <div class="navbar__column navbar__menu animated slideInLeft">
+                  <!--main navigation -->
+                  <nav class="navbar__menu-box navbar navbar-expand-lg">
+                     <div class="navbar-collapse navbar__column">
+                        <ul class="navbar-nav navbar__items navbar__items--right">
+                           <li class="nav-item" id="menu-item-1">
+                              <a class="animated fadeInUp nav-link" href="#" title="Explore">Explore</a>
+                           </li>
+                           <li class="nav-item" id="menu-item-2">
+                              <a class="animated fadeInUp nav-link" href="#" title="Stay">Stay</a>
+                           </li>
+                           <li class="nav-item" id="menu-item-3">
+                              <a class="animated fadeInUp nav-link" href="#" title="Experience">Experience</a>
+                           </li>
+                           <li class="nav-item" id="menu-item-4">
+                              <a class="animated fadeInUp nav-link" href="#" title="Travel">Travel</a>
+                           </li>
+                           <li class="nav-item" id="menu-item-5">
+                              <a class="animated fadeInUp nav-link" href="#" title="About">About</a> 
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <ul class="nav search-icon-banner" id="search-box">
+                  <li class=" astm-search-menu is-menu dropdown">
+                     <a href="#" title="">
+                        <svg aria-label="Search" class="search-icon" role="img" viewbox="2 9 20 5" width="30">
+                           <path class="search-icon-path" d="M15.7,14.3l-3.105-3.105C13.473,10.024,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7  c1.576,0,3.024-0.527,4.194-1.405L14.3,15.7c0.184,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.946,14.546,15.7,14.3z   M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z">
+                           </path>
+                        </svg>
+                     </a>
+                     <form action="https://www.google.com/" class="is-search-form is-form-style is-form-style-3 is-form-id-134" method="get" role="search">
+                        <label>
+                        <input autocomplete="on" class="is-search-input" name="s" placeholder="Search..." type="text"> </label>
+                        <button class="is-search-submit" type="submit">
+                           <span class="is-search-icon">
+                              <svg aria-label="Search" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                              </svg>
+                           </span>
+                        </button>
+                     </form>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+
+      <!--main site container-->
+      <div class="site">
+         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+         <!--- flexslider -->
+         <section class="slider-container flexslider">
+            <ul class="slides">
+               <li>
+                  <div class="slide-media">
+                     <img alt="mountain couple slide" class="slide-image" src="images/img_maingallery_couplemountains.jpg" width="1000" height="600">
+                     <div class="slide-content">
+                        <h3 class="slide-title">Explore the breathtaking mountain ranges</h3>
+                        <div class="slide-text"> </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide-media">
+                     <img alt="man on rock slide" src="images/img_maingallery_manonrock.jpg" width="1000" height="600">
+                     <div class="slide-content">
+                        <h3 class="slide-title">Slide 2</h3>
+                        <div class="slide-text">
+                           <h4>Caption</h4>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide-media">
+                     <img alt="streetlights slide" class="slide-image" src="images/img_maingallery_streetlights.jpg" width="1000" height="600">
+                     <div class="slide-content">
+                        <h3 class="slide-title">Slide 3</h3>
+                        <div class="slide-text">
+                           <h4>Caption</h4>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </section>
+
+         <!-- anchor the content here- for screen readers etc. -->
+         <main class="centered-text" id="content">
+            <article class="mission animated fadeInUp">
+               <header class="mission__header">
+                  <hgroup>
+                     <h1>Welcome to the Simpleview Europe</h1>
+                     <h2 class="mission__subtitle">
+                        WE HAVE BEEN PROVIDING INNOVATIVE, PRACTICAL TECHNOLOGY SOLUTIONS TO DESTINATIONS ACROSS EUROPE FOR TWENTY YEARS.
+                     </h2>
+                  </hgroup>
+               </header>
+               <p>New Mind | tellUs is a pan-European digital agency specialising in the tourism sector. Since the late 1990's we have been developing solutions for a wide range of Destination Management Organisations, working with National and Regional Tourist Boards, City Councils and Tourism Associations across Europe. molestiae non recusandae.</p>
+               <hr>
+            </article>
+         </main>
+
+      <!--info boxes, use webp with jpg fallback -->   
+      <section class="info">
+         <div class="info__row animated fadeInUp">
+            <div class="info__grid info__panel-1">
+               <figure class="info__box triangle-right">
+                  <picture>
+                        <source srcset="image.webp" type="images/img_block_explore.webp">
+                        <source srcset="image.jpg" type="images/img_block_explore.jpg">
+                     <img alt="scenery image 1" src="images/img_block_explore.jpg">
+                  </picture>
+               </figure>
+            </div>
+            <div class="info__grid info__panel-2">
+               <div class="info__box">
+                  <h2 class="blue">Explore</h2>
+                  <p>Proin porttitor, nisl eu bibendum pharetra, risus velit consectetur neque, vitae hendrerit mauris augue sed tellus.</p>
+               </div>
+            </div>
+            <div class="info__grid info__panel-3">
+               <figure class="info__box triangle-right">
+                  <picture>
+                        <source srcset="image.webp" type="images/img_block_experience.webp">
+                        <source srcset="image.jpg" type="images/img_block_experience.jpg">
+                     <img alt="scenery image 2" src="images/img_block_experience.jpg">
+                  </picture>
+               </figure>
+            </div>
+            <div class="info__grid info__panel-4">
+               <div class="info__box">
+                  <h2 class="green">Experience</h2>
+                  <p>Proin porttitor, nisl eu bibendum pharetra, risus velit consectetur neque, vitae hendrerit mauris augue sed tellus.</p>
+               </div>
+            </div>
+         </div>
+         <div class="info__row animated fadeInUp grid-row-2">
+            <div class="info__grid col-12 info__panel-5">
+               <div class="info__box">
+                  <h2 class="purple">Travel</h2>
+                  <p>Proin porttitor, nisl eu bibendum pharetra, risus velit consectetur neque, vitae hendrerit mauris augue sed tellus.</p>
+               </div>
+            </div>
+            <div class="info__grid info__panel-6">
+               <figure class="info__box triangle-left">
+                  <picture>
+                        <source srcset="image.webp" type="images/img_block_travel.webp">
+                        <source srcset="image.jpg" type="images/img_block_travel.jpg">
+                     <img alt="scenery image 2" src="images/img_block_travel.jpg">
+                  </picture>
+               </figure>
+            </div>
+            <div class="info__grid col-12 info__panel-7">
+               <div class="info__box">
+                  <h2 class="orange">Places to stay</h2>
+                  <p>Proin porttitor, nisl eu bibendum pharetra, risus velit consectetur neque, vitae hendrerit mauris augue sed tellus.</p>
+               </div>
+            </div>
+            <div class="info__grid info__panel-8">
+               <figure class="info__box triangle-left">
+                    <picture>
+                        <source srcset="image.webp" type="images/img_block_placestostay.webp">
+                        <source srcset="image.jpg" type="images/img_block_placestostay.jpg">
+                     <img alt="scenery image 2" src="images/img_block_placestostay.jpg">
+                  </picture>
+               </figure>
+            </div>
+         </div>
+      </section>
+      </div>
+
+      <!--footer, including back to top button -->
+      <footer class="footer">
+         <div class="footer__site-info">
+               <div class="footer__half">
+                  <span class="footer__copyright-footer">© Copyright Simpleview 2020</span>
+               </div>
+               <div class="footer__half"> 
+                  <span class="footer__svglogo">
+                  <img alt="footer_logo" src="images/logo_footer.svg" width="300" height="59">
+                  </span> 
+               </div>
+            </div>
+         <div class="to-the-top">
+            <a class="scrollToTop" href="#">
+               <div class="top-link">&#9650;</div>
+            </a>
+         </div>
+      </footer>
+
+      <link href="css/search.css" id="search-styles-css" media="all" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="js/search.js"></script>
+      <script src="js/source/jquery.fancybox.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/animations.min.js"></script>
+      <script src="js/skip-link-focus-fix.js"></script>
+      <script>
+         /* <![CDATA[ */
+         var flex_vars = {
+             "flex_animation": "fade",
+             "flex_animationspeed": "4000",
+             "flex_direction": "horizontal",
+             "flex_speed": "4000"
+         };
+         /* ]]> */
+      </script>
+      <script src="flexslider/jquery.flexslider.js"></script>
+      <script src="flexslider/flexvars.js"></script>
+   </body>
+</html>

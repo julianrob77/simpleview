@@ -1,0 +1,21 @@
+Thank you for considering my application.
+
+This front end is loosely based on a wordpress theme which i constructed some time ago, designed to be something of a swiss army knife and running with very few plugins.
+
+If you see unused CSS classes this is why, as they are there in case needed.
+
+I created a static front end version, and included flex slider, as well as some of the jQuery and CSS that makes the whole thing tick. I can provide a link to this theme which is simply a demo, for my own use and is not available in the theme repository.
+
+I have then coded things in from first principles. This page is fully bootstrapped and I have tested it on mobile devices via browserstacks, it seems to be properly responsive.
+
+You possibly wanted retina compatibility? (images given in two sizes) but I did not have time to apply this. 
+
+I have also run accessibility checks on the markup, it seems to be OK.
+
+While I did use images provided, for some of the arrows I coded this in CSS as its simple enough, and saves on assets. I have taken a bit of artistic licence here, I hope that is OK.
+
+Thanks
+
+Jay
+
+
